@@ -14,4 +14,9 @@ export class CustomerComponent {
     this.customerModel = new Customer(); //Clear the UI.
   }
 
+  // hasError(controlName: string) : string {
+  //     return this.customerModel.formCustomerGroup.
+  //           contains[controlName];
+  // }
+
 }

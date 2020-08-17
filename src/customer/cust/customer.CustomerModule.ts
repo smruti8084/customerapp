@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {RouterModule} from '@angular/router';
 import { CustomerComponent } from './customer.customerComponent';
 import { CustomerRoutes } from '../Routing/customer.CustomerRouting';
@@ -12,6 +12,7 @@ import { CustomerRoutes } from '../Routing/customer.CustomerRouting';
     CommonModule,
     FormsModule,
     RouterModule.forChild(CustomerRoutes),
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [CustomerComponent]

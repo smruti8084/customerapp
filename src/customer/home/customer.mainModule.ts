@@ -5,6 +5,7 @@ import {RouterModule } from '@angular/router';
 import {HomeComponent} from './customer.HomeComponent';
 import {MasterpageComponent} from './customer.masterpageComponent';
 import {MainRoutes} from '../Routing/customer.MainRouting';
+
 @NgModule({
   declarations: [
     HomeComponent, MasterpageComponent
@@ -12,7 +13,7 @@ import {MainRoutes} from '../Routing/customer.MainRouting';
   imports: [
     BrowserModule,
     FormsModule,
-    RouterModule.forRoot(MainRoutes),
+    RouterModule.forRoot(MainRoutes)
   ],
   providers: [],
   bootstrap: [MasterpageComponent]
