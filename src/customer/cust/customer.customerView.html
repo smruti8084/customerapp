@@ -1,0 +1,23 @@
+<h1 style="font-style: italic; background-color: rgb(214, 217, 226);">Welcome {{title}}</h1>
+
+<table>
+<tr>Customer code   : <input [(ngModel)]="customerModel.CustomerCode" type="text"/> </tr>
+<tr>Customer Name   : <input [(ngModel)]="customerModel.CustomerName" type="text"/> </tr>
+<tr>Customer Amount : <input [(ngModel)]="customerModel.CustomerAmount" type="text"/> </tr>
+
+<tr><input (click)="add()" type="button" value="Add"/> </tr>
+
+</table>
+
+<table>
+    <tr>
+        <td>Code    </td>
+        <td>Name    </td>
+        <td>Amount  </td>
+    </tr>
+    <tr *ngFor="let customerModel of customerModels">
+        <td>{{customerModel.CustomerCode}}</td>
+        <td>{{customerModel.CustomerName}}</td>
+        <td>{{customerModel.CustomerAmount}}</td>
+    </tr>
+</table>
